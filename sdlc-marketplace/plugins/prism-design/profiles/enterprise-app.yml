@@ -1,0 +1,34 @@
+id: enterprise-app
+name: Enterprise App
+primary_users: [nhân viên hiện trường, nhân viên có thiết bị cấp phát]
+density: high
+platforms:
+  - Android 360 primary, thường là thiết bị cấu hình thấp
+  - iOS 390
+  - chế độ ngoại tuyến bắt buộc
+research_focus:
+  - điều kiện sử dụng thực tế, ngoài trời, đeo găng, một tay
+  - pattern đồng bộ ngoại tuyến và xử lý xung đột dữ liệu
+  - tích hợp thiết bị ngoại vi, quét mã, camera, GPS
+flow_rules:
+  - mọi flow có nhánh mất mạng và nhánh đồng bộ lại
+  - khai báo rõ dữ liệu nào bắt buộc trực tuyến
+  - ghi nhận thời điểm và người thực hiện cho mọi thao tác nghiệp vụ
+wireframe_rules:
+  - touch target lớn hơn chuẩn, tối thiểu 56dp cho thao tác chính
+  - thiết kế cho đọc được dưới ánh sáng mạnh, tương phản cao
+  - form chia nhỏ, luôn tự lưu nháp
+ui_rules:
+  - ưu tiên tương phản và kích thước hơn thẩm mỹ
+  - tối giản animation để tiết kiệm pin và hiệu năng
+  - trạng thái đồng bộ luôn hiển thị
+usability_test:
+  required_when: mọi flow nghiệp vụ chính, không phải tuỳ chọn
+  default_type: test thật tại hiện trường, tối thiểu 5 người
+handoff_extras:
+  - đặc tả hành vi ngoại tuyến và quy tắc giải quyết xung đột
+  - danh sách thiết bị và phiên bản OS tối thiểu
+a11y_target: WCAG 2.2 AA, tương phản tăng cường cho ngoài trời
+done_criteria:
+  - mọi flow chính có nhánh ngoại tuyến đã duyệt
+  - đã test trên thiết bị cấu hình thấp nhất

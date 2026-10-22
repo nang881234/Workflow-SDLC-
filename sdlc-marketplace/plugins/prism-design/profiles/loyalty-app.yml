@@ -1,0 +1,35 @@
+id: loyalty-app
+name: Loyalty App
+primary_users: [khách hàng cá nhân, người dùng phổ thông]
+density: medium
+platforms:
+  - iOS 390 primary
+  - Android 360 primary
+  - màn lớn 430 và nhỏ 320 phải không vỡ
+research_focus:
+  - cơ chế tích điểm, đổi thưởng và hạng thành viên
+  - pattern onboarding, thông báo và quay lại ứng dụng
+  - chuẩn nền tảng, Apple HIG và Material Design 3
+flow_rules:
+  - mô tả vòng đời thành viên từ đăng ký, tích, đổi, lên hạng, hết hạn
+  - khai báo deeplink và điểm vào từ thông báo
+  - tách flow lần đầu và flow người dùng quay lại
+wireframe_rules:
+  - tuân thủ safe area, touch target tối thiểu 44pt iOS và 48dp Android
+  - mọi màn có trạng thái chưa đăng nhập, chưa có dữ liệu, lỗi mạng
+  - điều hướng chính không quá 5 mục
+ui_rules:
+  - tuân thủ Design System mobile, khác biệt iOS và Android phải ghi rõ
+  - bắt buộc có dark mode
+  - animation chuyển màn và phản hồi chạm là thành phần bắt buộc
+usability_test:
+  required_when: flow đổi thưởng hoặc flow onboarding thay đổi
+  default_type: test thật trên thiết bị, tối thiểu 5 người mỗi nền tảng
+handoff_extras:
+  - đặc tả animation gồm thời lượng, easing và trigger
+  - icon và illustration export theo mật độ từng nền tảng
+  - nội dung thông báo đẩy
+a11y_target: WCAG 2.2 AA, hỗ trợ dynamic type và screen reader
+done_criteria:
+  - light và dark mode đều duyệt
+  - đã kiểm trên thiết bị nhỏ nhất và lớn nhất trong danh sách hỗ trợ

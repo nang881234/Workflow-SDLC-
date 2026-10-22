@@ -1,0 +1,34 @@
+id: ecommerce-web
+name: Ecommerce web
+primary_users: [người mua hàng, khách vãng lai]
+density: medium
+platforms:
+  - mobile 390 primary
+  - desktop 1440
+  - tablet 768
+research_focus:
+  - pattern tìm kiếm, lọc, so sánh và giỏ hàng
+  - phân tích điểm rơi trong phễu từ xem tới thanh toán
+  - chuẩn hiển thị giá, khuyến mãi và tồn kho
+flow_rules:
+  - vẽ đủ phễu khám phá, chi tiết, giỏ, thanh toán, sau mua
+  - khai báo flow khách vãng lai và khách đã đăng nhập riêng
+  - mọi trạng thái hết hàng, đổi giá, hết khuyến mãi phải có nhánh xử lý
+wireframe_rules:
+  - checkout tối thiểu số bước, mỗi bước một quyết định
+  - mọi màn có skeleton loading, danh sách rỗng, lỗi mạng
+  - hiển thị tổng tiền và phí phát sinh sớm nhất có thể
+ui_rules:
+  - giá và CTA mua là thành phần tương phản cao nhất màn hình
+  - ảnh sản phẩm có tỉ lệ và placeholder thống nhất
+  - badge khuyến mãi dùng token, không tạo màu rời
+usability_test:
+  required_when: thay đổi chạm vào giỏ hàng hoặc thanh toán
+  default_type: test thật, tối thiểu 5 người, đo tỉ lệ hoàn thành checkout
+handoff_extras:
+  - quy tắc hiển thị giá, thuế, phí vận chuyển và làm tròn
+  - bảng trạng thái đơn hàng và thông báo tương ứng
+a11y_target: WCAG 2.2 AA, form thanh toán hỗ trợ autofill
+done_criteria:
+  - flow checkout đã qua usability test
+  - mọi trạng thái giá và tồn kho có UI tương ứng

@@ -1,0 +1,15 @@
+{
+  "extraKnownMarketplaces": {
+    "sdlc-internal": {
+      "source": {
+        "source": "git",
+        "url": "https://gitlab.example.com/<group>/sdlc-marketplace.git",
+        "ref": "main"
+      },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "prism-design@sdlc-internal": true
+  }
+}

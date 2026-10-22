@@ -1,0 +1,34 @@
+id: dashboard
+name: Dashboard
+primary_users: [quản lý, chuyên viên phân tích, điều hành]
+density: high
+platforms:
+  - desktop 1440 primary
+  - desktop 1920 mở rộng
+  - tablet 1024 chế độ đọc
+research_focus:
+  - xác định câu hỏi mà người xem cần trả lời trong 5 giây đầu
+  - pattern chọn loại biểu đồ theo kiểu dữ liệu
+  - chuẩn drill down và cross filter
+flow_rules:
+  - mỗi widget gắn với một câu hỏi nghiệp vụ, không có widget vô chủ
+  - khai báo đường drill down tới mức chi tiết cuối cùng
+  - ghi rõ chu kỳ làm mới dữ liệu và hành vi khi dữ liệu trễ
+wireframe_rules:
+  - phân tầng theo thứ tự KPI tổng, xu hướng, bảng chi tiết
+  - mọi biểu đồ cần no data, dữ liệu một điểm, dữ liệu ngoại lệ
+  - không dùng biểu đồ tròn cho hơn 4 hạng mục
+ui_rules:
+  - bảng màu dữ liệu tách riêng khỏi bảng màu thương hiệu
+  - màu không được là kênh truyền tin duy nhất, luôn kèm nhãn hoặc hình dạng
+  - tôn trọng thang đo, trục bắt đầu từ 0 với biểu đồ cột
+usability_test:
+  required_when: dashboard phục vụ quyết định cấp điều hành
+  default_type: giả lập với persona do PO định nghĩa, 3 kịch bản đọc số
+handoff_extras:
+  - từ điển metric, công thức tính và nguồn dữ liệu
+  - quy tắc làm tròn, đơn vị và ngưỡng cảnh báo
+a11y_target: WCAG 2.2 AA, contrast cho mọi chuỗi dữ liệu
+done_criteria:
+  - mỗi widget có metric definition được Data xác nhận
+  - đã duyệt bản dữ liệu thật thay cho dữ liệu mẫu

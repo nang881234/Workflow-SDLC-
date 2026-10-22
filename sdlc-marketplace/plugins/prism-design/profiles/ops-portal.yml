@@ -1,0 +1,35 @@
+id: ops-portal
+name: OPS / Portal
+primary_users: [nhân viên vận hành, admin nội bộ, CSKH]
+density: high
+platforms:
+  - desktop 1440 primary
+  - desktop 1280 secondary
+  - tablet 1024 tối thiểu đọc được
+research_focus:
+  - task analysis theo ca làm việc, đo số thao tác trên một nghiệp vụ
+  - pattern cho bulk action, filter nhiều tầng, audit log
+  - benchmark tốc độ nhập liệu bằng keyboard
+flow_rules:
+  - vẽ cả happy path và toàn bộ error path, OPS sống bằng error path
+  - mỗi flow ghi rõ role và permission được phép thực hiện
+  - mọi hành động phá huỷ dữ liệu phải có bước xác nhận và đường hoàn tác
+wireframe_rules:
+  - ưu tiên mật độ cao, bảng là layout chính, hạn chế khoảng trắng trang trí
+  - mọi màn danh sách cần empty state, loading, error, partial permission
+  - khai báo phím tắt cho 5 thao tác dùng nhiều nhất
+ui_rules:
+  - dùng token density compact của Design System
+  - màu chỉ mang nghĩa trạng thái, không dùng màu trang trí
+  - không animation ngoài feedback dưới 200ms
+usability_test:
+  required_when: flow có từ 7 bước trở lên hoặc chạm tới dữ liệu tài chính
+  default_type: test thật với nhân viên vận hành, tối thiểu 5 người
+handoff_extras:
+  - ma trận role và permission theo từng màn
+  - quy tắc phân trang, sắp xếp, giới hạn bản ghi
+  - định dạng ngày giờ, số, tiền tệ và timezone
+a11y_target: WCAG 2.2 AA, điều hướng bàn phím đầy đủ
+done_criteria:
+  - mọi state của bảng và form đã có wireframe
+  - ma trận permission được PO và Security xác nhận

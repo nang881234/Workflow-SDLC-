@@ -1,0 +1,21 @@
+# Trạng thái phase Design. Chỉ người cập nhật file này, AI không tự đổi.
+project: ""
+product_profiles: []      # ví dụ: [loyalty-app, ops-portal]
+design_system:
+  figma_url: ""
+  token_source: ""        # link tới bộ variable hoặc file token export
+owner:
+  product_designer: ""
+  product_owner: ""
+  tech_lead: ""
+
+steps:
+  intake:     { status: not_started, approved_by: "", date: "" }
+  research:   { status: not_started, approved_by: "", date: "" }
+  user_flow:  { status: not_started, approved_by: "", date: "" }
+  lofi:       { status: not_started, approved_by: "", date: "" }
+  ui:         { status: not_started, approved_by: "", date: "" }
+  validate:   { status: skipped,     approved_by: "", date: "", reason: "" }
+  handoff:    { status: not_started, approved_by: "", date: "" }
+
+# status hợp lệ: not_started, in_progress, needs_review, approved, skipped

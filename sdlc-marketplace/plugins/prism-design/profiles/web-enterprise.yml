@@ -1,0 +1,33 @@
+id: web-enterprise
+name: Web enterprise product
+primary_users: [khách hàng doanh nghiệp, người dùng chuyên nghiệp]
+density: medium
+platforms:
+  - desktop 1440 primary
+  - tablet 768
+  - mobile web 390 đủ dùng
+research_focus:
+  - mô hình multi tenant, phân quyền tổ chức và nhóm
+  - pattern onboarding cho tài khoản doanh nghiệp
+  - benchmark đối thủ trong cùng ngành dọc
+flow_rules:
+  - tách flow quản trị tổ chức khỏi flow người dùng cuối
+  - mô tả vòng đời tài khoản từ mời, kích hoạt, đình chỉ, xoá
+  - khai báo điểm tích hợp SSO và audit
+wireframe_rules:
+  - thiết kế theo module, mỗi module độc lập về điều hướng
+  - mọi form dài phải có lưu nháp và khôi phục
+  - có bản responsive cho ba breakpoint
+ui_rules:
+  - hỗ trợ white label nếu Design System có theme token
+  - trạng thái loading theo từng khối, không khoá toàn trang
+usability_test:
+  required_when: tính năng mới chạm quy trình phê duyệt hoặc thanh toán
+  default_type: test thật với khách hàng hiện hữu, tối thiểu 5 người
+handoff_extras:
+  - đặc tả theme token cho white label
+  - ma trận quyền theo gói dịch vụ
+a11y_target: WCAG 2.2 AA
+done_criteria:
+  - ba breakpoint đã có UI duyệt
+  - flow quản trị tổ chức được PO xác nhận
